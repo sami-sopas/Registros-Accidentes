@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatsUser));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatsUser));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtAdmins = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtUsers = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtAccidentes = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridExcel = new System.Windows.Forms.DataGridView();
             this.dataGridPdf = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridExcel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPdf)).BeginInit();
             this.SuspendLayout();
@@ -77,48 +77,100 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 695);
+            this.panel1.Size = new System.Drawing.Size(267, 643);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(140, 552);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 48);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Descargar\r\nExcel\r\n";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(352, 0);
+            this.panel2.Location = new System.Drawing.Point(264, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 695);
+            this.panel2.Size = new System.Drawing.Size(2, 565);
             this.panel2.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(133, 430);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(114, 120);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // txtAdmins
             // 
             this.txtAdmins.Enabled = false;
             this.txtAdmins.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdmins.Location = new System.Drawing.Point(61, 380);
+            this.txtAdmins.Location = new System.Drawing.Point(36, 320);
             this.txtAdmins.Margin = new System.Windows.Forms.Padding(0);
             this.txtAdmins.Name = "txtAdmins";
-            this.txtAdmins.Size = new System.Drawing.Size(246, 30);
+            this.txtAdmins.Size = new System.Drawing.Size(186, 26);
             this.txtAdmins.TabIndex = 7;
             this.txtAdmins.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 552);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 48);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Descargar\r\nPDF";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtUsers
             // 
             this.txtUsers.Enabled = false;
             this.txtUsers.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsers.Location = new System.Drawing.Point(60, 259);
+            this.txtUsers.Location = new System.Drawing.Point(36, 220);
             this.txtUsers.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsers.Name = "txtUsers";
-            this.txtUsers.Size = new System.Drawing.Size(246, 30);
+            this.txtUsers.Size = new System.Drawing.Size(186, 26);
             this.txtUsers.TabIndex = 6;
             this.txtUsers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 430);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // txtAccidentes
             // 
             this.txtAccidentes.Enabled = false;
             this.txtAccidentes.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccidentes.Location = new System.Drawing.Point(61, 136);
+            this.txtAccidentes.Location = new System.Drawing.Point(39, 118);
             this.txtAccidentes.Margin = new System.Windows.Forms.Padding(0);
             this.txtAccidentes.Name = "txtAccidentes";
-            this.txtAccidentes.Size = new System.Drawing.Size(246, 30);
+            this.txtAccidentes.Size = new System.Drawing.Size(186, 26);
             this.txtAccidentes.TabIndex = 5;
             this.txtAccidentes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -126,9 +178,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 335);
+            this.label4.Location = new System.Drawing.Point(18, 280);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(264, 29);
+            this.label4.Size = new System.Drawing.Size(215, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Administradores activos";
             // 
@@ -136,9 +189,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 213);
+            this.label3.Location = new System.Drawing.Point(35, 181);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 29);
+            this.label3.Size = new System.Drawing.Size(182, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Usuarios registrados";
             // 
@@ -146,9 +200,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 89);
+            this.label2.Location = new System.Drawing.Point(28, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 29);
+            this.label2.Size = new System.Drawing.Size(206, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Accidentes reportados";
             // 
@@ -156,9 +211,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ubuntu", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 16);
+            this.label1.Location = new System.Drawing.Point(48, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 41);
+            this.label1.Size = new System.Drawing.Size(168, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estadisticas";
             // 
@@ -168,61 +224,17 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(428, 42);
+            this.chart1.Location = new System.Drawing.Point(357, 13);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
+            series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(957, 629);
+            this.chart1.Size = new System.Drawing.Size(965, 598);
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(188, 593);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 58);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Descargar\r\nExcel\r\n";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(181, 445);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(133, 131);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 593);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 58);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Descargar\r\nPDF";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 445);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 131);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dataGridExcel
             // 
@@ -240,7 +252,8 @@
             this.dataGridExcel.ColumnHeadersHeight = 30;
             this.dataGridExcel.EnableHeadersVisualStyles = false;
             this.dataGridExcel.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridExcel.Location = new System.Drawing.Point(389, 403);
+            this.dataGridExcel.Location = new System.Drawing.Point(422, 363);
+            this.dataGridExcel.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridExcel.MultiSelect = false;
             this.dataGridExcel.Name = "dataGridExcel";
             this.dataGridExcel.ReadOnly = true;
@@ -259,7 +272,7 @@
             this.dataGridExcel.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridExcel.RowTemplate.Height = 30;
             this.dataGridExcel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridExcel.Size = new System.Drawing.Size(477, 248);
+            this.dataGridExcel.Size = new System.Drawing.Size(358, 202);
             this.dataGridExcel.TabIndex = 89;
             this.dataGridExcel.Visible = false;
             // 
@@ -279,7 +292,8 @@
             this.dataGridPdf.ColumnHeadersHeight = 30;
             this.dataGridPdf.EnableHeadersVisualStyles = false;
             this.dataGridPdf.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridPdf.Location = new System.Drawing.Point(928, 403);
+            this.dataGridPdf.Location = new System.Drawing.Point(881, 363);
+            this.dataGridPdf.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridPdf.MultiSelect = false;
             this.dataGridPdf.Name = "dataGridPdf";
             this.dataGridPdf.ReadOnly = true;
@@ -298,27 +312,28 @@
             this.dataGridPdf.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridPdf.RowTemplate.Height = 30;
             this.dataGridPdf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridPdf.Size = new System.Drawing.Size(477, 248);
+            this.dataGridPdf.Size = new System.Drawing.Size(358, 202);
             this.dataGridPdf.TabIndex = 88;
             this.dataGridPdf.Visible = false;
             // 
             // StatsUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1417, 695);
+            this.ClientSize = new System.Drawing.Size(1382, 643);
             this.Controls.Add(this.dataGridPdf);
             this.Controls.Add(this.dataGridExcel);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StatsUser";
             this.Text = "Estadisticas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridExcel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPdf)).EndInit();
             this.ResumeLayout(false);

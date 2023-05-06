@@ -61,10 +61,11 @@
             this.iconMenuItem1,
             this.iconMenuItem7,
             this.iconMenuItem8});
-            this.menu.Location = new System.Drawing.Point(0, 102);
+            this.menu.Location = new System.Drawing.Point(0, 83);
             this.menu.Name = "menu";
+            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menu.Size = new System.Drawing.Size(1410, 79);
+            this.menu.Size = new System.Drawing.Size(1398, 79);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             this.menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu_ItemClicked);
@@ -72,7 +73,7 @@
             // iconMenuItem3
             // 
             this.iconMenuItem3.AutoSize = false;
-            this.iconMenuItem3.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem3.IconChar = FontAwesome.Sharp.IconChar.UsersCog;
             this.iconMenuItem3.IconColor = System.Drawing.Color.DimGray;
@@ -88,7 +89,7 @@
             // iconMenuItem5
             // 
             this.iconMenuItem5.AutoSize = false;
-            this.iconMenuItem5.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem5.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem5.IconChar = FontAwesome.Sharp.IconChar.GaugeHigh;
             this.iconMenuItem5.IconColor = System.Drawing.Color.DimGray;
@@ -96,7 +97,7 @@
             this.iconMenuItem5.IconSize = 60;
             this.iconMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.iconMenuItem5.Name = "iconMenuItem5";
-            this.iconMenuItem5.Size = new System.Drawing.Size(98, 75);
+            this.iconMenuItem5.Size = new System.Drawing.Size(122, 75);
             this.iconMenuItem5.Text = "Conductores";
             this.iconMenuItem5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconMenuItem5.Click += new System.EventHandler(this.iconMenuItem5_Click);
@@ -104,7 +105,7 @@
             // iconMenuItem4
             // 
             this.iconMenuItem4.AutoSize = false;
-            this.iconMenuItem4.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem4.IconChar = FontAwesome.Sharp.IconChar.CarSide;
             this.iconMenuItem4.IconColor = System.Drawing.Color.DimGray;
@@ -120,7 +121,7 @@
             // iconMenuItem6
             // 
             this.iconMenuItem6.AutoSize = false;
-            this.iconMenuItem6.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem6.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem6.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
             this.iconMenuItem6.IconColor = System.Drawing.Color.DimGray;
@@ -136,7 +137,7 @@
             // iconMenuItem9
             // 
             this.iconMenuItem9.AutoSize = false;
-            this.iconMenuItem9.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem9.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem9.IconChar = FontAwesome.Sharp.IconChar.Map;
             this.iconMenuItem9.IconColor = System.Drawing.Color.DimGray;
@@ -152,7 +153,7 @@
             // iconMenuItem2
             // 
             this.iconMenuItem2.AutoSize = false;
-            this.iconMenuItem2.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem2.IconChar = FontAwesome.Sharp.IconChar.UserShield;
             this.iconMenuItem2.IconColor = System.Drawing.Color.DimGray;
@@ -168,7 +169,7 @@
             // iconMenuItem10
             // 
             this.iconMenuItem10.AutoSize = false;
-            this.iconMenuItem10.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem10.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem10.IconChar = FontAwesome.Sharp.IconChar.Grip;
             this.iconMenuItem10.IconColor = System.Drawing.Color.DimGray;
@@ -184,7 +185,7 @@
             // iconMenuItem1
             // 
             this.iconMenuItem1.AutoSize = false;
-            this.iconMenuItem1.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.CarCrash;
             this.iconMenuItem1.IconColor = System.Drawing.Color.DimGray;
@@ -200,7 +201,7 @@
             // iconMenuItem7
             // 
             this.iconMenuItem7.AutoSize = false;
-            this.iconMenuItem7.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem7.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem7.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
             this.iconMenuItem7.IconColor = System.Drawing.Color.DimGray;
@@ -216,7 +217,7 @@
             // iconMenuItem8
             // 
             this.iconMenuItem8.AutoSize = false;
-            this.iconMenuItem8.Font = new System.Drawing.Font("Ubuntu", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconMenuItem8.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconMenuItem8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.iconMenuItem8.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
             this.iconMenuItem8.IconColor = System.Drawing.Color.DimGray;
@@ -236,7 +237,8 @@
             this.menuTitulo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuTitulo.Location = new System.Drawing.Point(0, 0);
             this.menuTitulo.Name = "menuTitulo";
-            this.menuTitulo.Size = new System.Drawing.Size(1410, 102);
+            this.menuTitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuTitulo.Size = new System.Drawing.Size(1398, 83);
             this.menuTitulo.TabIndex = 1;
             this.menuTitulo.Text = "menuStrip2";
             // 
@@ -246,21 +248,22 @@
             this.bienvenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(99)))));
             this.bienvenido.Font = new System.Drawing.Font("Ubuntu", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bienvenido.ForeColor = System.Drawing.Color.White;
-            this.bienvenido.Location = new System.Drawing.Point(43, 18);
+            this.bienvenido.Location = new System.Drawing.Point(32, 15);
+            this.bienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bienvenido.Name = "bienvenido";
-            this.bienvenido.Size = new System.Drawing.Size(426, 60);
+            this.bienvenido.Size = new System.Drawing.Size(0, 46);
             this.bienvenido.TabIndex = 79;
-            this.bienvenido.Text = "Bienvenido Admin";
             // 
             // labelMenu
             // 
             this.labelMenu.AutoSize = true;
             this.labelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.labelMenu.Font = new System.Drawing.Font("Ubuntu", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMenu.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMenu.ForeColor = System.Drawing.Color.Black;
-            this.labelMenu.Location = new System.Drawing.Point(1032, 119);
+            this.labelMenu.Location = new System.Drawing.Point(1069, 104);
+            this.labelMenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMenu.Name = "labelMenu";
-            this.labelMenu.Size = new System.Drawing.Size(102, 40);
+            this.labelMenu.Size = new System.Drawing.Size(86, 33);
             this.labelMenu.TabIndex = 82;
             this.labelMenu.Text = "menu";
             this.labelMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -268,16 +271,17 @@
             // contenedor
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 181);
+            this.contenedor.Location = new System.Drawing.Point(0, 162);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1410, 693);
+            this.contenedor.Size = new System.Drawing.Size(1398, 643);
             this.contenedor.TabIndex = 83;
             // 
             // AdminView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1410, 874);
+            this.ClientSize = new System.Drawing.Size(1398, 805);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.labelMenu);
             this.Controls.Add(this.bienvenido);
@@ -285,6 +289,7 @@
             this.Controls.Add(this.menuTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminView";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

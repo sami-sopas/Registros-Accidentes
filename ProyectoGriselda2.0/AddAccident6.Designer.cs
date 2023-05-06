@@ -66,10 +66,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(95, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(71, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 44);
+            this.label1.Size = new System.Drawing.Size(283, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Datos del Accidente";
             // 
@@ -78,10 +77,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(254, 294);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(190, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 24);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 39;
             // 
             // bunifuButton1
@@ -131,8 +129,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(124, 668);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Location = new System.Drawing.Point(93, 543);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 10;
@@ -166,7 +163,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(304, 60);
+            this.bunifuButton1.Size = new System.Drawing.Size(228, 49);
             this.bunifuButton1.TabIndex = 84;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -178,7 +175,7 @@
             // comboBox_Estado
             // 
             this.comboBox_Estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Estado.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_Estado.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Estado.FormattingEnabled = true;
             this.comboBox_Estado.Items.AddRange(new object[] {
             "Aguascalientes",
@@ -213,21 +210,21 @@
             "Veracruz",
             "Yucatán",
             "Zacatecas"});
-            this.comboBox_Estado.Location = new System.Drawing.Point(125, 123);
+            this.comboBox_Estado.Location = new System.Drawing.Point(94, 100);
+            this.comboBox_Estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_Estado.Name = "comboBox_Estado";
             this.comboBox_Estado.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox_Estado.Size = new System.Drawing.Size(304, 32);
+            this.comboBox_Estado.Size = new System.Drawing.Size(229, 28);
             this.comboBox_Estado.TabIndex = 92;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(239, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(179, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 24);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 93;
             this.label2.Text = "Estado";
             // 
@@ -248,7 +245,7 @@
             this.txtCalle.BorderThickness = 1;
             this.txtCalle.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCalle.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCalle.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCalle.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCalle.DefaultText = "";
             this.txtCalle.FillColor = System.Drawing.Color.White;
             this.txtCalle.HideSelection = true;
@@ -258,7 +255,8 @@
             this.txtCalle.IconRight = null;
             this.txtCalle.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCalle.Lines = new string[0];
-            this.txtCalle.Location = new System.Drawing.Point(125, 455);
+            this.txtCalle.Location = new System.Drawing.Point(94, 370);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCalle.MaxLength = 32767;
             this.txtCalle.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCalle.Modified = false;
@@ -284,7 +282,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCalle.OnIdleState = stateProperties4;
-            this.txtCalle.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCalle.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCalle.PasswordChar = '\0';
             this.txtCalle.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCalle.PlaceholderText = "Calle";
@@ -295,7 +293,7 @@
             this.txtCalle.SelectionLength = 0;
             this.txtCalle.SelectionStart = 0;
             this.txtCalle.ShortcutsEnabled = true;
-            this.txtCalle.Size = new System.Drawing.Size(304, 45);
+            this.txtCalle.Size = new System.Drawing.Size(228, 36);
             this.txtCalle.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCalle.TabIndex = 99;
             this.txtCalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -309,10 +307,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(247, 413);
+            this.label4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(185, 336);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 24);
+            this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 98;
             this.label4.Text = "Calle";
             // 
@@ -333,7 +332,7 @@
             this.txtColonia.BorderThickness = 1;
             this.txtColonia.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtColonia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtColonia.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColonia.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColonia.DefaultText = "";
             this.txtColonia.FillColor = System.Drawing.Color.White;
             this.txtColonia.HideSelection = true;
@@ -343,7 +342,8 @@
             this.txtColonia.IconRight = null;
             this.txtColonia.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtColonia.Lines = new string[0];
-            this.txtColonia.Location = new System.Drawing.Point(125, 335);
+            this.txtColonia.Location = new System.Drawing.Point(94, 272);
+            this.txtColonia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtColonia.MaxLength = 32767;
             this.txtColonia.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtColonia.Modified = false;
@@ -369,7 +369,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtColonia.OnIdleState = stateProperties8;
-            this.txtColonia.Padding = new System.Windows.Forms.Padding(3);
+            this.txtColonia.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtColonia.PasswordChar = '\0';
             this.txtColonia.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtColonia.PlaceholderText = "Colonia";
@@ -380,7 +380,7 @@
             this.txtColonia.SelectionLength = 0;
             this.txtColonia.SelectionStart = 0;
             this.txtColonia.ShortcutsEnabled = true;
-            this.txtColonia.Size = new System.Drawing.Size(304, 45);
+            this.txtColonia.Size = new System.Drawing.Size(228, 36);
             this.txtColonia.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtColonia.TabIndex = 97;
             this.txtColonia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -408,7 +408,7 @@
             this.txtMunicipio.BorderThickness = 1;
             this.txtMunicipio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMunicipio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMunicipio.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMunicipio.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMunicipio.DefaultText = "";
             this.txtMunicipio.FillColor = System.Drawing.Color.White;
             this.txtMunicipio.HideSelection = true;
@@ -418,7 +418,8 @@
             this.txtMunicipio.IconRight = null;
             this.txtMunicipio.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMunicipio.Lines = new string[0];
-            this.txtMunicipio.Location = new System.Drawing.Point(125, 218);
+            this.txtMunicipio.Location = new System.Drawing.Point(94, 177);
+            this.txtMunicipio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMunicipio.MaxLength = 32767;
             this.txtMunicipio.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMunicipio.Modified = false;
@@ -444,7 +445,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMunicipio.OnIdleState = stateProperties12;
-            this.txtMunicipio.Padding = new System.Windows.Forms.Padding(3);
+            this.txtMunicipio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMunicipio.PasswordChar = '\0';
             this.txtMunicipio.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMunicipio.PlaceholderText = "Municipio";
@@ -455,7 +456,7 @@
             this.txtMunicipio.SelectionLength = 0;
             this.txtMunicipio.SelectionStart = 0;
             this.txtMunicipio.ShortcutsEnabled = true;
-            this.txtMunicipio.Size = new System.Drawing.Size(304, 45);
+            this.txtMunicipio.Size = new System.Drawing.Size(228, 36);
             this.txtMunicipio.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtMunicipio.TabIndex = 96;
             this.txtMunicipio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -469,60 +470,66 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(225, 182);
+            this.label9.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(169, 148);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 24);
+            this.label9.Size = new System.Drawing.Size(76, 20);
             this.label9.TabIndex = 95;
             this.label9.Text = "Municipio";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(239, 297);
+            this.label7.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(179, 241);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 24);
+            this.label7.Size = new System.Drawing.Size(64, 20);
             this.label7.TabIndex = 94;
             this.label7.Text = "Colonia";
             // 
             // hora
             // 
             this.hora.CustomFormat = "hh:mm";
-            this.hora.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.hora.Location = new System.Drawing.Point(324, 581);
+            this.hora.Location = new System.Drawing.Point(243, 472);
+            this.hora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hora.Name = "hora";
-            this.hora.Size = new System.Drawing.Size(192, 32);
+            this.hora.Size = new System.Drawing.Size(145, 26);
             this.hora.TabIndex = 103;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(391, 546);
+            this.label36.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(293, 444);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(53, 24);
+            this.label36.Size = new System.Drawing.Size(44, 20);
             this.label36.TabIndex = 102;
             this.label36.Text = "Hora";
             // 
             // fecha
             // 
             this.fecha.CustomFormat = "dd/MM/yyyy";
-            this.fecha.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fecha.Location = new System.Drawing.Point(62, 581);
+            this.fecha.Location = new System.Drawing.Point(46, 472);
+            this.fecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(192, 32);
+            this.fecha.Size = new System.Drawing.Size(145, 26);
             this.fecha.TabIndex = 101;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(120, 546);
+            this.label22.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(90, 444);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(63, 24);
+            this.label22.Size = new System.Drawing.Size(52, 20);
             this.label22.TabIndex = 100;
             this.label22.Text = "Fecha";
             // 
@@ -532,20 +539,21 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(368, 679);
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(276, 552);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 104;
             this.iconPictureBox1.TabStop = false;
             // 
             // AddAccident6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(570, 766);
+            this.ClientSize = new System.Drawing.Size(428, 622);
             this.ControlBox = false;
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.hora);
@@ -564,6 +572,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddAccident6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Accidente";

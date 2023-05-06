@@ -13,11 +13,22 @@ namespace ProyectoGriselda2._0
 {
     class PostgresConnection
     {
-        //Creacion de conexion
-        NpgsqlConnection conexion = new NpgsqlConnection("Server = localhost;" +
+
+
+        //Conexion anterior
+        //NpgsqlConnection conexion = new NpgsqlConnection("Server = localhost;" +
+        //                                         "User Id = postgres;" +
+        //                                         "Password = admin;" +
+        //                                         "Database = accidentes");
+
+        NpgsqlConnection conexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
                                                          "User Id = postgres;" +
-                                                         "Password = admin;" +
+                                                         "Password = Admin1234;" +
                                                          "Database = accidentes");
+
+        //Nombre del servidor: proyectogriselda
+        //Nombre de usuario admin: postgres
+        //password: Admin1234
 
         public void Open()
         {
@@ -62,9 +73,6 @@ namespace ProyectoGriselda2._0
                 //Si la consulta devuelve filas, es porque si existe un usuario que coincida con la info
                 if(table.Rows.Count == 1) //Encontro filas(datos)
                 {
-                    //Ocultamos la ventana de logeo
-                    Form loginWindow = new Login();
-                    loginWindow.Hide();
 
                     //Row[0][1]
                     //0: Fila deseada
@@ -83,9 +91,7 @@ namespace ProyectoGriselda2._0
                         //Mostrar el nombre registrado en la tabla en el nuevo formulario
                         //new Admin(table.Rows[0][0].ToString().Show());
 
-                        this.Close(); //Cerramos la ventana del login
-
-                        Form adminWindow = new AdminView();
+                        Form adminWindow = new AdminView(user);
 
                         adminWindow.Show();
                     }
@@ -94,9 +100,7 @@ namespace ProyectoGriselda2._0
                         //Llamar a la ventana para ver los accidentes
                         //Form SeeAccidentWindow = new SeeAccidents(table.Rows[0][0].ToString());
 
-                        this.Close(); //Cerramos la ventana del login
-
-                        Form SeeAccidentWindow = new UserView();
+                        Form SeeAccidentWindow = new UserView(user);
 
                         SeeAccidentWindow.Show();
 

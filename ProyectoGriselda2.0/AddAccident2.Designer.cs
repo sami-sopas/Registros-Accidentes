@@ -61,10 +61,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(127, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(85, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 44);
+            this.label1.Size = new System.Drawing.Size(267, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Datos del Vehiculo";
             // 
@@ -73,10 +72,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(237, 114);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(178, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 24);
+            this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 10;
             this.label2.Text = "Matricula";
             // 
@@ -107,7 +105,8 @@
             this.textBox_matricula.IconRight = null;
             this.textBox_matricula.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_matricula.Lines = new string[0];
-            this.textBox_matricula.Location = new System.Drawing.Point(135, 150);
+            this.textBox_matricula.Location = new System.Drawing.Point(101, 122);
+            this.textBox_matricula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_matricula.MaxLength = 7;
             this.textBox_matricula.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBox_matricula.Modified = false;
@@ -133,7 +132,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBox_matricula.OnIdleState = stateProperties4;
-            this.textBox_matricula.Padding = new System.Windows.Forms.Padding(3);
+            this.textBox_matricula.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_matricula.PasswordChar = '\0';
             this.textBox_matricula.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBox_matricula.PlaceholderText = "A123456";
@@ -143,7 +142,7 @@
             this.textBox_matricula.SelectionLength = 0;
             this.textBox_matricula.SelectionStart = 0;
             this.textBox_matricula.ShortcutsEnabled = true;
-            this.textBox_matricula.Size = new System.Drawing.Size(304, 45);
+            this.textBox_matricula.Size = new System.Drawing.Size(228, 37);
             this.textBox_matricula.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.textBox_matricula.TabIndex = 11;
             this.textBox_matricula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -181,7 +180,8 @@
             this.textBox_modelo.IconRight = null;
             this.textBox_modelo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_modelo.Lines = new string[0];
-            this.textBox_modelo.Location = new System.Drawing.Point(135, 273);
+            this.textBox_modelo.Location = new System.Drawing.Point(101, 222);
+            this.textBox_modelo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_modelo.MaxLength = 32767;
             this.textBox_modelo.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBox_modelo.Modified = false;
@@ -207,7 +207,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBox_modelo.OnIdleState = stateProperties8;
-            this.textBox_modelo.Padding = new System.Windows.Forms.Padding(3);
+            this.textBox_modelo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_modelo.PasswordChar = '\0';
             this.textBox_modelo.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBox_modelo.PlaceholderText = "Año o Nombre";
@@ -217,7 +217,7 @@
             this.textBox_modelo.SelectionLength = 0;
             this.textBox_modelo.SelectionStart = 0;
             this.textBox_modelo.ShortcutsEnabled = true;
-            this.textBox_modelo.Size = new System.Drawing.Size(304, 45);
+            this.textBox_modelo.Size = new System.Drawing.Size(228, 37);
             this.textBox_modelo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.textBox_modelo.TabIndex = 13;
             this.textBox_modelo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -233,10 +233,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(237, 236);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(178, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 24);
+            this.label3.Size = new System.Drawing.Size(62, 19);
             this.label3.TabIndex = 12;
             this.label3.Text = "Modelo";
             // 
@@ -245,10 +244,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(254, 294);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(190, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 24);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 39;
             // 
             // label6
@@ -256,10 +254,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(197, 487);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(148, 396);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 24);
+            this.label6.Size = new System.Drawing.Size(142, 19);
             this.label6.TabIndex = 41;
             this.label6.Text = "Cuenta con seguro";
             // 
@@ -267,19 +264,21 @@
             // 
             this.panel1.Controls.Add(this.radioButton_SeguroNo);
             this.panel1.Controls.Add(this.radioButton_SeguroSi);
-            this.panel1.Location = new System.Drawing.Point(201, 526);
+            this.panel1.Location = new System.Drawing.Point(151, 427);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 82);
+            this.panel1.Size = new System.Drawing.Size(136, 67);
             this.panel1.TabIndex = 81;
             // 
             // radioButton_SeguroNo
             // 
             this.radioButton_SeguroNo.AutoSize = true;
             this.radioButton_SeguroNo.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_SeguroNo.Location = new System.Drawing.Point(3, 31);
+            this.radioButton_SeguroNo.Location = new System.Drawing.Point(2, 25);
+            this.radioButton_SeguroNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton_SeguroNo.Name = "radioButton_SeguroNo";
             this.radioButton_SeguroNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton_SeguroNo.Size = new System.Drawing.Size(60, 29);
+            this.radioButton_SeguroNo.Size = new System.Drawing.Size(48, 24);
             this.radioButton_SeguroNo.TabIndex = 80;
             this.radioButton_SeguroNo.TabStop = true;
             this.radioButton_SeguroNo.Text = "No";
@@ -289,10 +288,11 @@
             // 
             this.radioButton_SeguroSi.AutoSize = true;
             this.radioButton_SeguroSi.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_SeguroSi.Location = new System.Drawing.Point(4, 3);
+            this.radioButton_SeguroSi.Location = new System.Drawing.Point(3, 2);
+            this.radioButton_SeguroSi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton_SeguroSi.Name = "radioButton_SeguroSi";
             this.radioButton_SeguroSi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton_SeguroSi.Size = new System.Drawing.Size(50, 29);
+            this.radioButton_SeguroSi.Size = new System.Drawing.Size(39, 24);
             this.radioButton_SeguroSi.TabIndex = 79;
             this.radioButton_SeguroSi.TabStop = true;
             this.radioButton_SeguroSi.Text = "Si";
@@ -345,8 +345,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(135, 654);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Location = new System.Drawing.Point(98, 531);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 10;
@@ -380,7 +379,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(304, 60);
+            this.bunifuButton1.Size = new System.Drawing.Size(228, 49);
             this.bunifuButton1.TabIndex = 84;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -399,10 +398,11 @@
             "Automovil",
             "Camioneta",
             "Camion"});
-            this.comboBox_tipovehiculo.Location = new System.Drawing.Point(135, 396);
+            this.comboBox_tipovehiculo.Location = new System.Drawing.Point(101, 322);
+            this.comboBox_tipovehiculo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_tipovehiculo.Name = "comboBox_tipovehiculo";
             this.comboBox_tipovehiculo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox_tipovehiculo.Size = new System.Drawing.Size(304, 32);
+            this.comboBox_tipovehiculo.Size = new System.Drawing.Size(229, 27);
             this.comboBox_tipovehiculo.TabIndex = 85;
             // 
             // label8
@@ -410,10 +410,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(254, 352);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(190, 286);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 24);
+            this.label8.Size = new System.Drawing.Size(41, 19);
             this.label8.TabIndex = 86;
             this.label8.Text = "Tipo";
             // 
@@ -423,20 +422,21 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(377, 664);
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(280, 540);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 87;
             this.iconPictureBox1.TabStop = false;
             // 
             // AddAccident2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(570, 766);
+            this.ClientSize = new System.Drawing.Size(428, 622);
             this.ControlBox = false;
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label8);
@@ -451,6 +451,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddAccident2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Vehiculo";

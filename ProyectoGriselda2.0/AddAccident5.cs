@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class AddAccident5 : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                                 "User Id = postgres;" +
-                                                 "Password = admin;" +
-                                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
         int nLicenciaConductor;
         int consecuenciaID;
@@ -58,7 +58,15 @@ namespace ProyectoGriselda2._0
 
             Form form = new AddAccident6(nLicenciaConductor,consecuenciaID,numPlaca,userID);
 
-            form.Show();
+            form.ShowDialog();
+        }
+
+        private void txtNumPlaca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

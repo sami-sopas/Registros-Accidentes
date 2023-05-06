@@ -60,10 +60,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(132, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(98, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 44);
+            this.label1.Size = new System.Drawing.Size(236, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Datos del Oficial";
             // 
@@ -72,10 +71,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(254, 294);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(190, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 24);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 39;
             // 
             // bunifuButton1
@@ -125,8 +123,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(132, 581);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Location = new System.Drawing.Point(99, 472);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 10;
@@ -160,7 +157,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(304, 60);
+            this.bunifuButton1.Size = new System.Drawing.Size(228, 49);
             this.bunifuButton1.TabIndex = 84;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -186,7 +183,7 @@
             this.txtNumPlaca.BorderThickness = 1;
             this.txtNumPlaca.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNumPlaca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumPlaca.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumPlaca.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumPlaca.DefaultText = "";
             this.txtNumPlaca.FillColor = System.Drawing.Color.White;
             this.txtNumPlaca.HideSelection = true;
@@ -196,7 +193,8 @@
             this.txtNumPlaca.IconRight = null;
             this.txtNumPlaca.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNumPlaca.Lines = new string[0];
-            this.txtNumPlaca.Location = new System.Drawing.Point(140, 307);
+            this.txtNumPlaca.Location = new System.Drawing.Point(105, 249);
+            this.txtNumPlaca.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumPlaca.MaxLength = 32767;
             this.txtNumPlaca.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNumPlaca.Modified = false;
@@ -222,7 +220,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtNumPlaca.OnIdleState = stateProperties4;
-            this.txtNumPlaca.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNumPlaca.Padding = new System.Windows.Forms.Padding(2);
             this.txtNumPlaca.PasswordChar = '\0';
             this.txtNumPlaca.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNumPlaca.PlaceholderText = "Placa";
@@ -233,7 +231,7 @@
             this.txtNumPlaca.SelectionLength = 0;
             this.txtNumPlaca.SelectionStart = 0;
             this.txtNumPlaca.ShortcutsEnabled = true;
-            this.txtNumPlaca.Size = new System.Drawing.Size(296, 45);
+            this.txtNumPlaca.Size = new System.Drawing.Size(222, 36);
             this.txtNumPlaca.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNumPlaca.TabIndex = 90;
             this.txtNumPlaca.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -243,6 +241,7 @@
             this.txtNumPlaca.TextPlaceholder = "Placa";
             this.txtNumPlaca.UseSystemPasswordChar = false;
             this.txtNumPlaca.WordWrap = true;
+            this.txtNumPlaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumPlaca_KeyPress);
             // 
             // txtCargo
             // 
@@ -261,7 +260,7 @@
             this.txtCargo.BorderThickness = 1;
             this.txtCargo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtCargo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCargo.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCargo.DefaultText = "";
             this.txtCargo.FillColor = System.Drawing.Color.White;
             this.txtCargo.HideSelection = true;
@@ -271,7 +270,8 @@
             this.txtCargo.IconRight = null;
             this.txtCargo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCargo.Lines = new string[0];
-            this.txtCargo.Location = new System.Drawing.Point(140, 447);
+            this.txtCargo.Location = new System.Drawing.Point(105, 363);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCargo.MaxLength = 32767;
             this.txtCargo.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCargo.Modified = false;
@@ -297,7 +297,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCargo.OnIdleState = stateProperties8;
-            this.txtCargo.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCargo.Padding = new System.Windows.Forms.Padding(2);
             this.txtCargo.PasswordChar = '\0';
             this.txtCargo.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCargo.PlaceholderText = "Cargo que ejerce";
@@ -308,7 +308,7 @@
             this.txtCargo.SelectionLength = 0;
             this.txtCargo.SelectionStart = 0;
             this.txtCargo.ShortcutsEnabled = true;
-            this.txtCargo.Size = new System.Drawing.Size(296, 45);
+            this.txtCargo.Size = new System.Drawing.Size(222, 36);
             this.txtCargo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCargo.TabIndex = 89;
             this.txtCargo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -322,20 +322,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(253, 406);
+            this.label4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(190, 330);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 24);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 88;
             this.label4.Text = "Cargo";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(208, 268);
+            this.label8.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(148, 218);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 24);
+            this.label8.Size = new System.Drawing.Size(131, 20);
             this.label8.TabIndex = 87;
             this.label8.Text = "Numero de Placa";
             // 
@@ -356,7 +358,7 @@
             this.txtNombre.BorderThickness = 1;
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.DefaultText = "";
             this.txtNombre.FillColor = System.Drawing.Color.White;
             this.txtNombre.HideSelection = true;
@@ -366,7 +368,8 @@
             this.txtNombre.IconRight = null;
             this.txtNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(140, 161);
+            this.txtNombre.Location = new System.Drawing.Point(105, 131);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombre.Modified = false;
@@ -392,7 +395,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtNombre.OnIdleState = stateProperties12;
-            this.txtNombre.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNombre.Padding = new System.Windows.Forms.Padding(2);
             this.txtNombre.PasswordChar = '\0';
             this.txtNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNombre.PlaceholderText = "Nombre del Oficial";
@@ -403,7 +406,7 @@
             this.txtNombre.SelectionLength = 0;
             this.txtNombre.SelectionStart = 0;
             this.txtNombre.ShortcutsEnabled = true;
-            this.txtNombre.Size = new System.Drawing.Size(296, 45);
+            this.txtNombre.Size = new System.Drawing.Size(222, 36);
             this.txtNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNombre.TabIndex = 86;
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -417,10 +420,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(243, 125);
+            this.label7.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(182, 102);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 24);
+            this.label7.Size = new System.Drawing.Size(67, 20);
             this.label7.TabIndex = 85;
             this.label7.Text = "Nombre";
             // 
@@ -430,20 +434,21 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(377, 592);
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(283, 481);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 91;
             this.iconPictureBox1.TabStop = false;
             // 
             // AddAccident5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(570, 766);
+            this.ClientSize = new System.Drawing.Size(428, 622);
             this.ControlBox = false;
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.txtNumPlaca);
@@ -456,6 +461,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddAccident5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Oficial";

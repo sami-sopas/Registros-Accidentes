@@ -16,10 +16,10 @@ namespace ProyectoGriselda2._0
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null; //Indica el formulario activo en el panel
 
-        public AdminView()
+        public AdminView(string name)
         {
             InitializeComponent();
-            bienvenido.Text = "Bienvenido Administrador" + Program.username;
+            bienvenido.Text = "Bienvenido Administrador " + name;
             labelMenu.Text = string.Empty;
         }
 

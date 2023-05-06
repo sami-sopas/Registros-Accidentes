@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class AddAccident1 : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                                 "User Id = postgres;" +
-                                                 "Password = admin;" +
-                                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
         public AddAccident1()
         {
@@ -102,13 +102,30 @@ namespace ProyectoGriselda2._0
 
             miConexion.Close();
 
+            //Enviamos las llaves foraneas que usaran los siguientes forms
+            Form form = new AddAccident2(nLicencia, userID);
+
             //Cerramos la ventana actual y abrimos la del siguiente formulario
             this.Close();
 
-            //Enviamos las llaves foraneas que usaran los siguientes forms
-            Form form = new AddAccident2(nLicencia,userID);
+            form.ShowDialog();
+        }
 
-            form.Show();
+        //Para que solo se puedan escribir numeros
+        private void textBox_nLicencia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox_edad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

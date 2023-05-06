@@ -21,10 +21,10 @@ namespace ProyectoGriselda2._0
     public partial class StatsAdmin : Form
     {
         //Creamos la conexion
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                                 "User Id = postgres;" +
-                                                 "Password = admin;" +
-                                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
         public StatsAdmin()
         {

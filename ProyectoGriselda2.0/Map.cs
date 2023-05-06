@@ -20,10 +20,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class Map : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                 "User Id = postgres;" +
-                                 "Password = admin;" +
-                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
 
 
@@ -51,7 +51,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones(); //Funcion que "reinicia" los botones, los manda todos para el frente
 
-            pin.Location = new Point(43, 267); //Localizamos el pin en la localizacion del estado
+            pin.Location = new Point(47, 200); //Localizamos el pin en la localizacion del estado
 
             botonCircular2.SendToBack(); //Quita el boton para que solo se quede el Pin
 
@@ -59,7 +59,7 @@ namespace ProyectoGriselda2._0
 
             query = "select estado as \"Estado\",municipio as \"Municipio\",colonia as \"Colonia\",calle as \"Calle\" from ubicacion where estado = 'Baja California';";
 
-            adapter = new NpgsqlDataAdapter(query,miConexion);
+            adapter = new NpgsqlDataAdapter(query, miConexion);
 
             table = new DataTable();
 
@@ -77,7 +77,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(122, 443);
+            pin.Location = new Point(95, 305);
 
             botonCircular3.SendToBack();
 
@@ -103,7 +103,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(149, 310);
+            pin.Location = new Point(155, 255);
 
             botonCircular5.SendToBack();
 
@@ -129,7 +129,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(246, 355);
+            pin.Location = new Point(250, 283);
 
             botonCircular6.SendToBack();
 
@@ -155,7 +155,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(338, 394);
+            pin.Location = new Point(337, 330);
 
             botonCircular7.SendToBack();
 
@@ -181,7 +181,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(395, 435);
+            pin.Location = new Point(393, 360);
 
             botonCircular8.SendToBack();
 
@@ -207,7 +207,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(420, 463);
+            pin.Location = new Point(417, 403);
 
             botonCircular9.SendToBack();
 
@@ -233,7 +233,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(204, 435);
+            pin.Location = new Point(200, 350);
 
             botonCircular10.SendToBack();
 
@@ -259,7 +259,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(272, 454);
+            pin.Location = new Point(285, 380);
 
             botonCircular11.SendToBack();
 
@@ -285,7 +285,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(320, 481);
+            pin.Location = new Point(323, 410);
 
             botonCircular12.SendToBack();
 
@@ -311,7 +311,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(381, 518);
+            pin.Location = new Point(374, 442);
 
             botonCircular13.SendToBack();
 
@@ -337,7 +337,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(276, 537);
+            pin.Location = new Point(275, 460);
 
             botonCircular14.SendToBack();
 
@@ -364,7 +364,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(335, 520);
+            pin.Location = new Point(332, 446);
 
             botonCircular15.SendToBack();
 
@@ -390,7 +390,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(303, 560); //Localizamos el pin en la localizacion del estado
+            pin.Location = new Point(300, 490); //Localizamos el pin en la localizacion del estado
 
             botonCircular1.SendToBack(); //Quita el boton para que solo se quede el Pin
 
@@ -417,7 +417,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(365, 555);
+            pin.Location = new Point(360, 480);
 
             botonCircular16.SendToBack();
 
@@ -438,18 +438,19 @@ namespace ProyectoGriselda2._0
             comboBox_Filtro.Text = "Guanajuato";
         }
 
-        //Queretaro
-        private void botonCircular17_Click(object sender, EventArgs e)
+
+        //Querétaro
+        private void botonCircular17_Click_1(object sender, EventArgs e)
         {
             aparecerBotones();
 
-            pin.Location = new Point(390, 560);
+            pin.Location = new Point(384, 480);
 
             botonCircular17.SendToBack();
 
             miConexion.Open();
 
-            query = "select estado as \"Estado\",municipio as \"Municipio\",colonia as \"Colonia\",calle as \"Calle\" from ubicacion where estado = 'Quéretaro';";
+            query = "select estado as \"Estado\",municipio as \"Municipio\",colonia as \"Colonia\",calle as \"Calle\" from ubicacion where estado = 'Querétaro';";
 
             adapter = new NpgsqlDataAdapter(query, miConexion);
 
@@ -461,7 +462,7 @@ namespace ProyectoGriselda2._0
 
             miConexion.Close();
 
-            comboBox_Filtro.Text = "Quéretaro";
+            comboBox_Filtro.Text = "Querétaro";
         }
 
         //Hidalgo
@@ -469,7 +470,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(414, 565);
+            pin.Location = new Point(406, 485);
 
             botonCircular18.SendToBack();
 
@@ -495,7 +496,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(300, 595);
+            pin.Location = new Point(295, 520);
 
             botonCircular19.SendToBack();
 
@@ -521,7 +522,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(340, 600);
+            pin.Location = new Point(340, 520);
 
             botonCircular20.SendToBack();
 
@@ -547,7 +548,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(393, 593);
+            pin.Location = new Point(390, 510);
 
             botonCircular21.SendToBack();
 
@@ -573,7 +574,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(411, 591);
+            pin.Location = new Point(404, 514);
 
             botonCircular22.SendToBack();
 
@@ -599,7 +600,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(416, 600);
+            pin.Location = new Point(385, 560);
 
             botonCircular24.SendToBack();
 
@@ -625,7 +626,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(413, 610);
+            pin.Location = new Point(408, 530);
 
             botonCircular25.SendToBack();
 
@@ -651,7 +652,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(434, 588);
+            pin.Location = new Point(429, 514);
 
             botonCircular23.SendToBack();
 
@@ -677,7 +678,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(512, 622);
+            pin.Location = new Point(505, 548);
 
             botonCircular4.SendToBack();
 
@@ -703,7 +704,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(476, 660);
+            pin.Location = new Point(470, 580);
 
             botonCircular26.SendToBack();
 
@@ -729,7 +730,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(568, 622);
+            pin.Location = new Point(555, 545);
 
             botonCircular28.SendToBack();
 
@@ -755,7 +756,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(570, 680);
+            pin.Location = new Point(580, 580);
 
             botonCircular29.SendToBack();
 
@@ -781,7 +782,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(625, 612);
+            pin.Location = new Point(615, 520);
 
             botonCircular30.SendToBack();
 
@@ -807,7 +808,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(653, 550);
+            pin.Location = new Point(640, 480);
 
             botonCircular31.SendToBack();
 
@@ -833,7 +834,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(673, 580);
+            pin.Location = new Point(655, 512);
 
             botonCircular32.SendToBack();
 
@@ -859,7 +860,7 @@ namespace ProyectoGriselda2._0
         {
             aparecerBotones();
 
-            pin.Location = new Point(445, 610);
+            pin.Location = new Point(440, 530);
 
             botonCircular33.SendToBack();
 
@@ -899,7 +900,7 @@ namespace ProyectoGriselda2._0
             botonCircular14.BringToFront();
             botonCircular15.BringToFront();
             botonCircular16.BringToFront();
-            botonCircular17.BringToFront(); 
+            botonCircular17.BringToFront();
             botonCircular18.BringToFront();
             botonCircular19.BringToFront();
             botonCircular20.BringToFront();
@@ -1004,11 +1005,11 @@ namespace ProyectoGriselda2._0
                     break;
 
                 case "Puebla":
-                    botonCircular33_Click(null, null);  
+                    botonCircular33_Click(null, null);
                     break;
 
                 case "Querétaro":
-                    botonCircular17_Click(null, null);
+                    botonCircular17_Click_1(null, null);
                     break;
 
                 case "Quintana Roo":
@@ -1025,7 +1026,7 @@ namespace ProyectoGriselda2._0
 
                 case "Sonora":
                     botonCircular5_Click(null, null);
-                    break; 
+                    break;
 
                 case "Tabasco":
                     botonCircular28_Click(null, null);
@@ -1054,6 +1055,7 @@ namespace ProyectoGriselda2._0
             }
 
 
+        }
     }
-    }
+    
 }

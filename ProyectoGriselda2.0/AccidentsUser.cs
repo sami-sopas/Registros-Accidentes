@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class AccidentsUser : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                         "User Id = postgres;" +
-                                         "Password = admin;" +
-                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
         public AccidentsUser()
         {
             InitializeComponent();
@@ -75,13 +75,13 @@ namespace ProyectoGriselda2._0
             {
                 Form addAccidentWindow = new AddAccident1();
           
-                addAccidentWindow.Show();
+                addAccidentWindow.ShowDialog();
             }
 
             Consultar(); //Para actualizar el registro que se acaba de hacer
         }
 
-        private void bunifuButton5_Click(object sender, EventArgs e)
+        private void bunifuButton2_Click(object sender, EventArgs e)
         {
             miConexion.Open();
 
@@ -239,14 +239,12 @@ namespace ProyectoGriselda2._0
             miConexion.Close();
         }
 
-        //Boton para refrescar a la tabla original
-        public void bunifuButton7_Click_1(object sender, EventArgs e)
+        //Boton para refrescar a la tabla originals
+        private void bunifuButton4_Click(object sender, EventArgs e)
         {
             Consultar();
 
             textBox_Buscar.Text = string.Empty;
         }
-
-
     }
 }

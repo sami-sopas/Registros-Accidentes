@@ -12,6 +12,7 @@ namespace ProyectoGriselda2._0
 {
     public partial class AddUser : Form
     {
+        //
         public AddUser()
         {
             InitializeComponent();
@@ -58,6 +59,8 @@ namespace ProyectoGriselda2._0
             }
 
             miConexion.AddUser(textBox_user.Text, textBox1.Text, "usuario");
+
+            MessageBox.Show("Usuario registrado !, ahora puedes volver al menú principal", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
             //Cerramos la ventana de registro
             this.Close();

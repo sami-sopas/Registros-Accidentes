@@ -55,6 +55,8 @@
             this.txt2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,34 +64,31 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Bk", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(167, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(154, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 37);
+            this.label1.Size = new System.Drawing.Size(185, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Agregar Usuario";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(221, 218);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(201, 341);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 24);
+            this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Contraseña";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(239, 101);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(216, 242);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
+            this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Usuario";
             // 
@@ -98,9 +97,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Gray;
-            this.checkBox1.Location = new System.Drawing.Point(138, 442);
+            this.checkBox1.Location = new System.Drawing.Point(141, 512);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(133, 22);
+            this.checkBox1.Size = new System.Drawing.Size(108, 18);
             this.checkBox1.TabIndex = 15;
             this.checkBox1.Text = "Ver contraseña";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -109,12 +109,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(195, 341);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(174, 434);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 24);
+            this.label4.Size = new System.Drawing.Size(148, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Repetir Contraseña";
             // 
@@ -147,7 +146,7 @@
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton1.Font = new System.Drawing.Font("Roboto Bk", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton1.Font = new System.Drawing.Font("Roboto Bk", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuButton1.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -165,8 +164,8 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(138, 511);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Location = new System.Drawing.Point(141, 568);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 5;
@@ -200,7 +199,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(282, 54);
+            this.bunifuButton1.Size = new System.Drawing.Size(212, 44);
             this.bunifuButton1.TabIndex = 19;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -238,7 +237,7 @@
             this.boton_cancelar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.boton_cancelar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.boton_cancelar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.boton_cancelar.Font = new System.Drawing.Font("Roboto Bk", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton_cancelar.Font = new System.Drawing.Font("Roboto Bk", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_cancelar.ForeColor = System.Drawing.Color.White;
             this.boton_cancelar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.boton_cancelar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -256,8 +255,8 @@
             this.boton_cancelar.IdleIconLeftImage = null;
             this.boton_cancelar.IdleIconRightImage = null;
             this.boton_cancelar.IndicateFocus = false;
-            this.boton_cancelar.Location = new System.Drawing.Point(138, 595);
-            this.boton_cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.boton_cancelar.Location = new System.Drawing.Point(141, 636);
+            this.boton_cancelar.Margin = new System.Windows.Forms.Padding(0);
             this.boton_cancelar.Name = "boton_cancelar";
             this.boton_cancelar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.boton_cancelar.OnDisabledState.BorderRadius = 5;
@@ -291,7 +290,7 @@
             this.boton_cancelar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.boton_cancelar.OnPressedState.IconLeftImage = null;
             this.boton_cancelar.OnPressedState.IconRightImage = null;
-            this.boton_cancelar.Size = new System.Drawing.Size(282, 54);
+            this.boton_cancelar.Size = new System.Drawing.Size(212, 44);
             this.boton_cancelar.TabIndex = 20;
             this.boton_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.boton_cancelar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -317,7 +316,7 @@
             this.textBox_user.BorderThickness = 1;
             this.textBox_user.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textBox_user.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox_user.DefaultFont = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_user.DefaultFont = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_user.DefaultText = "";
             this.textBox_user.FillColor = System.Drawing.Color.White;
             this.textBox_user.HideSelection = true;
@@ -327,7 +326,8 @@
             this.textBox_user.IconRight = null;
             this.textBox_user.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox_user.Lines = new string[0];
-            this.textBox_user.Location = new System.Drawing.Point(138, 142);
+            this.textBox_user.Location = new System.Drawing.Point(141, 274);
+            this.textBox_user.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_user.MaxLength = 32767;
             this.textBox_user.MinimumSize = new System.Drawing.Size(1, 1);
             this.textBox_user.Modified = false;
@@ -353,7 +353,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBox_user.OnIdleState = stateProperties4;
-            this.textBox_user.Padding = new System.Windows.Forms.Padding(3);
+            this.textBox_user.Padding = new System.Windows.Forms.Padding(2);
             this.textBox_user.PasswordChar = '\0';
             this.textBox_user.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBox_user.PlaceholderText = "Nombre de usuario";
@@ -364,7 +364,7 @@
             this.textBox_user.SelectionLength = 0;
             this.textBox_user.SelectionStart = 0;
             this.textBox_user.ShortcutsEnabled = true;
-            this.textBox_user.Size = new System.Drawing.Size(282, 45);
+            this.textBox_user.Size = new System.Drawing.Size(212, 36);
             this.textBox_user.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.textBox_user.TabIndex = 88;
             this.textBox_user.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -402,7 +402,8 @@
             this.txt1.IconRight = null;
             this.txt1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt1.Lines = new string[0];
-            this.txt1.Location = new System.Drawing.Point(138, 262);
+            this.txt1.Location = new System.Drawing.Point(141, 377);
+            this.txt1.Margin = new System.Windows.Forms.Padding(2);
             this.txt1.MaxLength = 32767;
             this.txt1.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt1.Modified = false;
@@ -428,7 +429,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt1.OnIdleState = stateProperties8;
-            this.txt1.Padding = new System.Windows.Forms.Padding(3);
+            this.txt1.Padding = new System.Windows.Forms.Padding(2);
             this.txt1.PasswordChar = '●';
             this.txt1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt1.PlaceholderText = "";
@@ -439,7 +440,7 @@
             this.txt1.SelectionLength = 0;
             this.txt1.SelectionStart = 0;
             this.txt1.ShortcutsEnabled = true;
-            this.txt1.Size = new System.Drawing.Size(282, 45);
+            this.txt1.Size = new System.Drawing.Size(212, 37);
             this.txt1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt1.TabIndex = 89;
             this.txt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -477,7 +478,8 @@
             this.txt2.IconRight = null;
             this.txt2.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt2.Lines = new string[0];
-            this.txt2.Location = new System.Drawing.Point(138, 384);
+            this.txt2.Location = new System.Drawing.Point(141, 465);
+            this.txt2.Margin = new System.Windows.Forms.Padding(2);
             this.txt2.MaxLength = 32767;
             this.txt2.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt2.Modified = false;
@@ -503,7 +505,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txt2.OnIdleState = stateProperties12;
-            this.txt2.Padding = new System.Windows.Forms.Padding(3);
+            this.txt2.Padding = new System.Windows.Forms.Padding(2);
             this.txt2.PasswordChar = '●';
             this.txt2.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txt2.PlaceholderText = "";
@@ -514,7 +516,7 @@
             this.txt2.SelectionLength = 0;
             this.txt2.SelectionStart = 0;
             this.txt2.ShortcutsEnabled = true;
-            this.txt2.Size = new System.Drawing.Size(282, 45);
+            this.txt2.Size = new System.Drawing.Size(212, 37);
             this.txt2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txt2.TabIndex = 90;
             this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -529,10 +531,10 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(142, 273);
+            this.textBox1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(147, 386);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 25);
+            this.textBox1.Size = new System.Drawing.Size(200, 19);
             this.textBox1.TabIndex = 91;
             this.textBox1.UseSystemPasswordChar = true;
             // 
@@ -540,20 +542,32 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(147, 395);
+            this.textBox2.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(147, 474);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 25);
+            this.textBox2.Size = new System.Drawing.Size(197, 19);
             this.textBox2.TabIndex = 92;
             this.textBox2.UseSystemPasswordChar = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(161, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 93;
+            this.pictureBox1.TabStop = false;
+            // 
             // AddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(556, 698);
+            this.ClientSize = new System.Drawing.Size(483, 721);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txt2);
@@ -567,9 +581,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Usuario";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -589,5 +605,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox txt2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -15,10 +15,6 @@ namespace ProyectoGriselda2._0
 {
     public partial class AboutUs : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                         "User Id = postgres;" +
-                                         "Password = admin;" +
-                                         "Database = accidentes");
         public AboutUs()
         {
             InitializeComponent();

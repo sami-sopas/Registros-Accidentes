@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class AccidentsAdmin : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                         "User Id = postgres;" +
-                                         "Password = admin;" +
-                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
         public AccidentsAdmin()
         {
             InitializeComponent();
@@ -66,7 +66,8 @@ namespace ProyectoGriselda2._0
         //Boton agregar nuevo accidente
         private void bunifuButton1_Click_1(object sender, EventArgs e)
         {
-            //ToDo
+            Form form = new AddAccident1();
+            form.ShowDialog();
         }
 
         //Boton para eliminar registro
@@ -93,17 +94,18 @@ namespace ProyectoGriselda2._0
 
         //Boton para buscar algun registro
 
-             /*
-             ID
-            Estado
-            Matricula
-            Nombre de Usuario
-            Nombre de Pasajero
-            Nombre de Oficial
-            Nombre de Conductor 
-             */
+        /*
+        ID
+       Estado
+       Matricula
+       Nombre de Usuario
+       Nombre de Pasajero
+       Nombre de Oficial
+       Nombre de Conductor 
+        */
 
-        private void bunifuButton5_Click(object sender, EventArgs e)
+
+        private void bunifuButton2_Click_1(object sender, EventArgs e)
         {
             miConexion.Open();
 
@@ -328,13 +330,11 @@ namespace ProyectoGriselda2._0
         }
 
         //Boton para refrescar a la tabla original
-        private void bunifuButton7_Click_1(object sender, EventArgs e)
+        private void bunifuButton4_Click(object sender, EventArgs e)
         {
             Consultar();
 
             textBox_Buscar.Text = string.Empty;
         }
-
-
     }
 }

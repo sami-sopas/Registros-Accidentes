@@ -75,10 +75,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(127, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(81, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 44);
+            this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Datos del Pasajero";
             // 
@@ -87,10 +86,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(237, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(178, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 24);
+            this.label2.Size = new System.Drawing.Size(66, 19);
             this.label2.TabIndex = 10;
             this.label2.Text = "Nombre";
             // 
@@ -121,7 +119,8 @@
             this.txtNombre.IconRight = null;
             this.txtNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(135, 124);
+            this.txtNombre.Location = new System.Drawing.Point(101, 101);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombre.Modified = false;
@@ -147,7 +146,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtNombre.OnIdleState = stateProperties4;
-            this.txtNombre.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNombre.Padding = new System.Windows.Forms.Padding(2);
             this.txtNombre.PasswordChar = '\0';
             this.txtNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNombre.PlaceholderText = "Nombre de un pasajero";
@@ -157,7 +156,7 @@
             this.txtNombre.SelectionLength = 0;
             this.txtNombre.SelectionStart = 0;
             this.txtNombre.ShortcutsEnabled = true;
-            this.txtNombre.Size = new System.Drawing.Size(304, 45);
+            this.txtNombre.Size = new System.Drawing.Size(228, 37);
             this.txtNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNombre.TabIndex = 11;
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -195,7 +194,8 @@
             this.txtCantidad.IconRight = null;
             this.txtCantidad.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCantidad.Lines = new string[0];
-            this.txtCantidad.Location = new System.Drawing.Point(135, 229);
+            this.txtCantidad.Location = new System.Drawing.Point(101, 186);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad.MaxLength = 32767;
             this.txtCantidad.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCantidad.Modified = false;
@@ -221,7 +221,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCantidad.OnIdleState = stateProperties8;
-            this.txtCantidad.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCantidad.Padding = new System.Windows.Forms.Padding(2);
             this.txtCantidad.PasswordChar = '\0';
             this.txtCantidad.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCantidad.PlaceholderText = "Cantidad de pasajeros";
@@ -231,7 +231,7 @@
             this.txtCantidad.SelectionLength = 0;
             this.txtCantidad.SelectionStart = 0;
             this.txtCantidad.ShortcutsEnabled = true;
-            this.txtCantidad.Size = new System.Drawing.Size(304, 45);
+            this.txtCantidad.Size = new System.Drawing.Size(228, 37);
             this.txtCantidad.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCantidad.TabIndex = 13;
             this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -241,16 +241,16 @@
             this.txtCantidad.TextPlaceholder = "Cantidad de pasajeros";
             this.txtCantidad.UseSystemPasswordChar = false;
             this.txtCantidad.WordWrap = true;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(237, 193);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(178, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 24);
+            this.label3.Size = new System.Drawing.Size(73, 19);
             this.label3.TabIndex = 12;
             this.label3.Text = "Cantidad";
             // 
@@ -259,29 +259,30 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(254, 294);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(190, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 24);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 39;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.radioButton_pasajeroNo);
             this.panel1.Controls.Add(this.radioButton_pasajeroSi);
-            this.panel1.Location = new System.Drawing.Point(240, 571);
+            this.panel1.Location = new System.Drawing.Point(180, 464);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(83, 82);
+            this.panel1.Size = new System.Drawing.Size(62, 67);
             this.panel1.TabIndex = 81;
             // 
             // radioButton_pasajeroNo
             // 
             this.radioButton_pasajeroNo.AutoSize = true;
             this.radioButton_pasajeroNo.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_pasajeroNo.Location = new System.Drawing.Point(3, 31);
+            this.radioButton_pasajeroNo.Location = new System.Drawing.Point(2, 25);
+            this.radioButton_pasajeroNo.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_pasajeroNo.Name = "radioButton_pasajeroNo";
             this.radioButton_pasajeroNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton_pasajeroNo.Size = new System.Drawing.Size(60, 29);
+            this.radioButton_pasajeroNo.Size = new System.Drawing.Size(48, 24);
             this.radioButton_pasajeroNo.TabIndex = 80;
             this.radioButton_pasajeroNo.TabStop = true;
             this.radioButton_pasajeroNo.Text = "No";
@@ -291,10 +292,11 @@
             // 
             this.radioButton_pasajeroSi.AutoSize = true;
             this.radioButton_pasajeroSi.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_pasajeroSi.Location = new System.Drawing.Point(4, 3);
+            this.radioButton_pasajeroSi.Location = new System.Drawing.Point(3, 2);
+            this.radioButton_pasajeroSi.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_pasajeroSi.Name = "radioButton_pasajeroSi";
             this.radioButton_pasajeroSi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.radioButton_pasajeroSi.Size = new System.Drawing.Size(50, 29);
+            this.radioButton_pasajeroSi.Size = new System.Drawing.Size(39, 24);
             this.radioButton_pasajeroSi.TabIndex = 79;
             this.radioButton_pasajeroSi.TabStop = true;
             this.radioButton_pasajeroSi.Text = "Si";
@@ -347,8 +349,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(135, 681);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton1.Location = new System.Drawing.Point(101, 553);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 10;
@@ -382,7 +383,7 @@
             this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(304, 60);
+            this.bunifuButton1.Size = new System.Drawing.Size(228, 49);
             this.bunifuButton1.TabIndex = 84;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -418,8 +419,9 @@
             this.txtCurp.IconRight = null;
             this.txtCurp.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCurp.Lines = new string[0];
-            this.txtCurp.Location = new System.Drawing.Point(135, 337);
-            this.txtCurp.MaxLength = 32767;
+            this.txtCurp.Location = new System.Drawing.Point(101, 274);
+            this.txtCurp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCurp.MaxLength = 18;
             this.txtCurp.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCurp.Modified = false;
             this.txtCurp.Multiline = false;
@@ -444,24 +446,24 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCurp.OnIdleState = stateProperties12;
-            this.txtCurp.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCurp.Padding = new System.Windows.Forms.Padding(2);
             this.txtCurp.PasswordChar = '\0';
             this.txtCurp.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtCurp.PlaceholderText = "Ej: CARR031119HVZSMBA1";
+            this.txtCurp.PlaceholderText = "";
             this.txtCurp.ReadOnly = false;
             this.txtCurp.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtCurp.SelectedText = "";
             this.txtCurp.SelectionLength = 0;
             this.txtCurp.SelectionStart = 0;
             this.txtCurp.ShortcutsEnabled = true;
-            this.txtCurp.Size = new System.Drawing.Size(304, 45);
+            this.txtCurp.Size = new System.Drawing.Size(228, 37);
             this.txtCurp.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCurp.TabIndex = 86;
             this.txtCurp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCurp.TextMarginBottom = 0;
             this.txtCurp.TextMarginLeft = 3;
             this.txtCurp.TextMarginTop = 0;
-            this.txtCurp.TextPlaceholder = "Ej: CARR031119HVZSMBA1";
+            this.txtCurp.TextPlaceholder = "";
             this.txtCurp.UseSystemPasswordChar = false;
             this.txtCurp.WordWrap = true;
             // 
@@ -470,10 +472,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(254, 300);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(190, 244);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 24);
+            this.label4.Size = new System.Drawing.Size(50, 19);
             this.label4.TabIndex = 85;
             this.label4.Text = "CURP";
             // 
@@ -483,9 +484,10 @@
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(168, 443);
+            this.panel2.Location = new System.Drawing.Point(126, 360);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(240, 76);
+            this.panel2.Size = new System.Drawing.Size(180, 62);
             this.panel2.TabIndex = 88;
             // 
             // button4
@@ -494,11 +496,11 @@
             this.button4.AutoSize = true;
             this.button4.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button4.Location = new System.Drawing.Point(124, 15);
+            this.button4.Location = new System.Drawing.Point(93, 12);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(44, 47);
+            this.button4.Size = new System.Drawing.Size(38, 41);
             this.button4.TabIndex = 50;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -510,11 +512,11 @@
             this.button5.AutoSize = true;
             this.button5.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button5.Location = new System.Drawing.Point(183, 15);
+            this.button5.Location = new System.Drawing.Point(137, 12);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(44, 47);
+            this.button5.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(38, 41);
             this.button5.TabIndex = 49;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -526,11 +528,11 @@
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button3.Location = new System.Drawing.Point(66, 15);
+            this.button3.Location = new System.Drawing.Point(50, 12);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(44, 47);
+            this.button3.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(38, 41);
             this.button3.TabIndex = 48;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -542,11 +544,11 @@
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("Ubuntu", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button2.Location = new System.Drawing.Point(11, 15);
+            this.button2.Location = new System.Drawing.Point(8, 12);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(44, 47);
+            this.button2.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(38, 41);
             this.button2.TabIndex = 47;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -557,10 +559,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(237, 540);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(178, 439);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 24);
+            this.label7.Size = new System.Drawing.Size(70, 19);
             this.label7.TabIndex = 90;
             this.label7.Text = "Cinturon";
             // 
@@ -569,10 +570,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(246, 403);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(184, 327);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 24);
+            this.label6.Size = new System.Drawing.Size(62, 19);
             this.label6.TabIndex = 91;
             this.label6.Text = "Asiento";
             // 
@@ -587,11 +587,11 @@
             this.iconButton1.IconColor = System.Drawing.Color.Gray;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 45;
-            this.iconButton1.Location = new System.Drawing.Point(450, 457);
+            this.iconButton1.Location = new System.Drawing.Point(338, 362);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(54, 48);
+            this.iconButton1.Size = new System.Drawing.Size(40, 50);
             this.iconButton1.TabIndex = 92;
             this.toolTip1.SetToolTip(this.iconButton1, "Copiloto: 2\r\nAtras a la izquierda: 3\r\nAtras en medio: 4\r\nAtras a la derecha: 5\r\nO" +
         "tros asientos: 5\r\n");
@@ -603,20 +603,21 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 40;
-            this.iconPictureBox1.Location = new System.Drawing.Point(382, 692);
+            this.iconPictureBox1.IconSize = 30;
+            this.iconPictureBox1.Location = new System.Drawing.Point(286, 562);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.iconPictureBox1.Size = new System.Drawing.Size(30, 32);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 93;
             this.iconPictureBox1.TabStop = false;
             // 
             // AddAccident3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(570, 766);
+            this.ClientSize = new System.Drawing.Size(428, 622);
             this.ControlBox = false;
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.iconButton1);
@@ -634,6 +635,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddAccident3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Pasajero";

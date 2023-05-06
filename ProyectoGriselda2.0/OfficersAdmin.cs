@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class OfficersAdmin : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                         "User Id = postgres;" +
-                                         "Password = admin;" +
-                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
         public OfficersAdmin()
         {
             InitializeComponent();
@@ -77,7 +77,7 @@ namespace ProyectoGriselda2._0
 
 
         //Boton agregar nuevo usuario
-        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        private void bunifuButton9_Click(object sender, EventArgs e)
         {
             miConexion.Open();
 
@@ -209,8 +209,15 @@ namespace ProyectoGriselda2._0
             textBox_Buscar.Text = string.Empty;
         }
 
+        
+
+        private void comboBox_Orden_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Consultar();
+        }
+
         //Boton para refrescar a la tabla original
-        private void bunifuButton7_Click_1(object sender, EventArgs e)
+        private void bunifuButton8_Click(object sender, EventArgs e)
         {
             Consultar();
             txtNombre.Text = string.Empty;
@@ -218,12 +225,5 @@ namespace ProyectoGriselda2._0
             txtCargo.Text = string.Empty;
             textBox_Buscar.Text = string.Empty;
         }
-
-        private void comboBox_Orden_SelectedValueChanged(object sender, EventArgs e)
-        {
-            Consultar();
-        }
-
-
     }
 }

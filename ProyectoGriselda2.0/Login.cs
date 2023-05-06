@@ -25,21 +25,22 @@ namespace ProyectoGriselda2._0
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            Form SeeAccidentsWindow = new UserView();
+            Form SeeAccidentsWindow = new UserView("");
 
             this.Hide();
             SeeAccidentsWindow.Show();
         }
 
+        //Boton para iniciar sesion
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            Form SeeAccidents = new UserView();
-
-            miConexion.logear(textBox_user.Text, textBox1.Text);
 
             ///EN PROGRAM.CS DECLARE UNA VARIABLE GLOBAL PARA SABER SI ESTA LOGUEADO UN USUARIO O NO
             Program.logueado = true;
             Program.username = textBox_user.Text;
+            this.Hide();
+            miConexion.logear(textBox_user.Text, textBox1.Text);
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -53,16 +54,13 @@ namespace ProyectoGriselda2._0
         {
             if (e.KeyCode == Keys.Enter)
             {
-                Form SeeAccidents = new UserView();
-
-                miConexion.logear(textBox_user.Text, textBox1.Text);
-
-                this.Hide(); //Esconder la ventana de login
 
                 ///EN PROGRAM.CS DECLARE UNA VARIABLE GLOBAL PARA SABER SI ESTA LOGUEADO UN USUARIO O NO
-                Program.logueado = true;
                 Program.username = textBox_user.Text;
+                Program.logueado = true;
+                this.Hide();
 
+                miConexion.logear(textBox_user.Text, textBox1.Text);
 
                 e.Handled = true;
                 e.SuppressKeyPress = true;
@@ -97,6 +95,26 @@ namespace ProyectoGriselda2._0
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

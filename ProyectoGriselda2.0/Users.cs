@@ -14,10 +14,10 @@ namespace ProyectoGriselda2._0
     public partial class Users : Form
     {
         //Creamos la conexion
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                                 "User Id = postgres;" +
-                                                 "Password = admin;" +
-                                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
         public Users()
         {
             InitializeComponent();
@@ -151,7 +151,7 @@ namespace ProyectoGriselda2._0
         }
 
         //Boton para buscar algun registro
-        private void bunifuButton4_Click_1(object sender, EventArgs e)
+        private void bunifuButton9_Click(object sender, EventArgs e)
         {
             miConexion.Open();
 
@@ -240,19 +240,12 @@ namespace ProyectoGriselda2._0
             textBox_Buscar.Text = string.Empty;
         }
 
-        //Boton para refrescar a la tabla original
-        private void bunifuButton7_Click(object sender, EventArgs e)
+   
+        //Refrescar
+        private void bunifuButton8_Click(object sender, EventArgs e)
         {
             Consultar();
-            txtNombre.Text = string.Empty;
-            txtContrasenia.Text = string.Empty;
-            txtConfirmContrasenia.Text = string.Empty;
-            comboBox_Rol.Text = string.Empty;
-            comboBox_Buscar.Text = string.Empty;
-            textBox_Buscar.Text = string.Empty;
-
-
+            limpiar();
         }
-
     }
 }

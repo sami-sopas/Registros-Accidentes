@@ -17,10 +17,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class Consequences : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                         "User Id = postgres;" +
-                                         "Password = admin;" +
-                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
         public Consequences()
         {
@@ -101,7 +101,7 @@ namespace ProyectoGriselda2._0
 
 
         //Boton para buscar algun registro
-        private void bunifuButton5_Click(object sender, EventArgs e)
+        private void bunifuButton3_Click(object sender, EventArgs e)
         {
             miConexion.Open();
 
@@ -199,12 +199,11 @@ namespace ProyectoGriselda2._0
         }
 
         //Boton para refrescar a la tabla original
-        private void bunifuButton7_Click_1(object sender, EventArgs e)
+        private void bunifuButton4_Click(object sender, EventArgs e)
         {
             Consultar();
             limpiar();
         }
-
     }
     
 }

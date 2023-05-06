@@ -13,10 +13,10 @@ namespace ProyectoGriselda2._0
 {
     public partial class AddAccident3 : Form
     {
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
-                                                 "User Id = postgres;" +
-                                                 "Password = admin;" +
-                                                 "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+                                                         "User Id = postgres;" +
+                                                         "Password = Admin1234;" +
+                                                         "Database = accidentes");
 
         string matricula_carro = string.Empty;
         int userID;
@@ -30,6 +30,8 @@ namespace ProyectoGriselda2._0
             this.nLicenciaConductor = nLicenciaConductor;
 
             radioButton_pasajeroSi.Checked = true;
+            button2.Checked = false;
+           
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -90,7 +92,7 @@ namespace ProyectoGriselda2._0
 
             Form form = new AddAccident4(nLicenciaConductor,userID);
 
-            form.Show();
+            form.ShowDialog();
         }
 
         //Eventos para que solo se pueda activar un boton
@@ -133,6 +135,14 @@ namespace ProyectoGriselda2._0
                 button2.Checked = false;
                 button3.Checked = false;
                 button4.Checked = false;
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }
