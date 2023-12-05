@@ -15,16 +15,16 @@ namespace ProyectoGriselda2._0
     {
 
 
-        //Conexion anterior
-        //NpgsqlConnection conexion = new NpgsqlConnection("Server = localhost;" +
-        //                                         "User Id = postgres;" +
-        //                                         "Password = admin;" +
-        //                                         "Database = accidentes");
+        NpgsqlConnection conexion = new NpgsqlConnection("Server = localhost;" +
+                                                 "User Id = postgres;" +
+                                                 "Password = usuario;" +
+                                                 "Database = accidentes");
 
-        NpgsqlConnection conexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
-                                                         "User Id = postgres;" +
-                                                         "Password = Admin1234;" +
-                                                         "Database = accidentes");
+        //Conexion que tenia con azure
+        //NpgsqlConnection conexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
+        //                                                 "User Id = postgres;" +
+        //                                                 "Password = Admin1234;" +
+        //                                                 "Database = accidentes");
 
         //Nombre del servidor: proyectogriselda
         //Nombre de usuario admin: postgres

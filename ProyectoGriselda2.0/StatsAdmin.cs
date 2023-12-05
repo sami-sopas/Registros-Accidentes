@@ -8,23 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-//Liberias para el pdf
-using iTextSharp.text; 
+using iTextSharp.text; //Para el pdf
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 using System.IO;
 using System.Windows;
+using Microsoft.Office.Interop.Excel;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoGriselda2._0
 {
     public partial class StatsAdmin : Form
     {
         //Creamos la conexion
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
-                                                         "User Id = postgres;" +
-                                                         "Password = Admin1234;" +
-                                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
+                                                 "User Id = postgres;" +
+                                                 "Password = usuario;" +
+                                                 "Database = accidentes");
 
         public StatsAdmin()
         {
@@ -43,6 +43,29 @@ namespace ProyectoGriselda2._0
 
             ///MOSTRAR LA GRAFICA DE BARRAS
 
+            string query = "SELECT ub.estado, count(ac.id) as cantidad " +
+                " FROM accidente ac " +
+                "  JOIN ubicacion ub " +
+                "   ON ub.id = ac.id_ubicacion " +
+                "    GROUP BY ub.estado";
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.CommandText = query;
+            cmd.Connection = miConexion;
+
+            NpgsqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string estado = dr[0].ToString();
+                int cantidad = Convert.ToInt32(dr[1]);
+                chart1.Series[0].Points.AddXY(estado, cantidad);
+                chart1.Series[0].Points.Last().LegendText = estado;
+            }
+
+            miConexion.Close();
+
+            /*
             string query = "SELECT ub.estado, count(ac.id) * 1.0 as cantidad " +
                 " FROM accidente ac " +
                 "  JOIN ubicacion ub " +
@@ -61,6 +84,7 @@ namespace ProyectoGriselda2._0
             }
 
             miConexion.Close();
+            */
 
 
             /* Este codigo funciona para graficas de barras
@@ -87,7 +111,7 @@ namespace ProyectoGriselda2._0
 
             NpgsqlDataAdapter dataAdapter1 = new NpgsqlDataAdapter(command1);
 
-            DataTable table1 = new DataTable();
+            System.Data.DataTable table1 = new System.Data.DataTable();
 
             dataAdapter1.Fill(table1);
 
@@ -101,7 +125,7 @@ namespace ProyectoGriselda2._0
 
             NpgsqlDataAdapter dataAdapter2 = new NpgsqlDataAdapter(command2);
 
-            DataTable table2 = new DataTable();
+            System.Data.DataTable table2 = new System.Data.DataTable();
 
             dataAdapter2.Fill(table2);
 
@@ -132,7 +156,7 @@ namespace ProyectoGriselda2._0
 
             NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, miConexion);
 
-            DataTable dataTable = new DataTable();
+            System.Data.DataTable dataTable = new System.Data.DataTable();
 
             adapter.Fill(dataTable);
 
@@ -148,7 +172,7 @@ namespace ProyectoGriselda2._0
 
             NpgsqlDataAdapter adapter2 = new NpgsqlDataAdapter(query2, miConexion);
 
-            DataTable dataTable2 = new DataTable();
+            System.Data.DataTable dataTable2 = new System.Data.DataTable();
 
             adapter2.Fill(dataTable2);
 

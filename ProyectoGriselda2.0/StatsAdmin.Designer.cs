@@ -31,13 +31,13 @@ namespace ProyectoGriselda2._0
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatsAdmin));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,15 +51,15 @@ namespace ProyectoGriselda2._0
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridPdf = new System.Windows.Forms.DataGridView();
             this.dataGridExcel = new System.Windows.Forms.DataGridView();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPdf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridExcel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,7 +79,7 @@ namespace ProyectoGriselda2._0
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 643);
             this.panel1.TabIndex = 0;
@@ -101,7 +101,7 @@ namespace ProyectoGriselda2._0
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(147, 425);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(108, 123);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +126,7 @@ namespace ProyectoGriselda2._0
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(11, 427);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(123, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -138,7 +138,7 @@ namespace ProyectoGriselda2._0
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(265, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2, 650);
             this.panel2.TabIndex = 8;
@@ -220,32 +220,6 @@ namespace ProyectoGriselda2._0
             this.label1.TabIndex = 0;
             this.label1.Text = "Reportes";
             // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Enabled = false;
-            legend1.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Serie1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(328, 31);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = "#.##%";
-            series1.Legend = "Serie1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 3;
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(993, 589);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
-            // 
             // dataGridPdf
             // 
             this.dataGridPdf.AllowUserToAddRows = false;
@@ -263,7 +237,7 @@ namespace ProyectoGriselda2._0
             this.dataGridPdf.EnableHeadersVisualStyles = false;
             this.dataGridPdf.GridColor = System.Drawing.Color.DimGray;
             this.dataGridPdf.Location = new System.Drawing.Point(871, 385);
-            this.dataGridPdf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridPdf.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridPdf.MultiSelect = false;
             this.dataGridPdf.Name = "dataGridPdf";
             this.dataGridPdf.ReadOnly = true;
@@ -303,7 +277,7 @@ namespace ProyectoGriselda2._0
             this.dataGridExcel.EnableHeadersVisualStyles = false;
             this.dataGridExcel.GridColor = System.Drawing.Color.DimGray;
             this.dataGridExcel.Location = new System.Drawing.Point(352, 385);
-            this.dataGridExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridExcel.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridExcel.MultiSelect = false;
             this.dataGridExcel.Name = "dataGridExcel";
             this.dataGridExcel.ReadOnly = true;
@@ -326,6 +300,32 @@ namespace ProyectoGriselda2._0
             this.dataGridExcel.TabIndex = 87;
             this.dataGridExcel.Visible = false;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Enabled = false;
+            legend1.Font = new System.Drawing.Font("Ubuntu", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.Name = "Serie1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(328, 31);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Font = new System.Drawing.Font("Ubuntu", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.Label = "#PERCENT{P2}";
+            series1.Legend = "Serie1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 3;
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(993, 589);
+            this.chart1.TabIndex = 1;
+            this.chart1.Text = "chart1";
+            // 
             // StatsAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,16 +336,16 @@ namespace ProyectoGriselda2._0
             this.Controls.Add(this.dataGridPdf);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StatsAdmin";
             this.Text = "Estadisticas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPdf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridExcel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,7 +354,6 @@ namespace ProyectoGriselda2._0
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.TextBox txtAccidentes;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -368,5 +367,6 @@ namespace ProyectoGriselda2._0
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataGridPdf;
         private DataGridView dataGridExcel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

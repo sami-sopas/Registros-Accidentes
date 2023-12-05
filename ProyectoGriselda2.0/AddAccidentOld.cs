@@ -14,10 +14,10 @@ namespace ProyectoGriselda2._0
     public partial class AddAccidentOld : Form
     {
         //Creacion de conexion
-        NpgsqlConnection miConexion = new NpgsqlConnection("Server = proyectogriselda.postgres.database.azure.com;" +
-                                                         "User Id = postgres;" +
-                                                         "Password = Admin1234;" +
-                                                         "Database = accidentes");
+        NpgsqlConnection miConexion = new NpgsqlConnection("Server = localhost;" +
+                                                 "User Id = postgres;" +
+                                                 "Password = usuario;" +
+                                                 "Database = accidentes");
         public AddAccidentOld()
         {
             InitializeComponent();
